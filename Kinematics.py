@@ -1,10 +1,20 @@
 #Takes in the known variables and solves for unknown. If all are known, that is reported. 
 def Force(force: float, mass: float, acceleration: float) -> float:
     if not force:
-        return f'has a force of {mass * acceleration}'
+        return mass * acceleration
     elif not mass:
-        return f'has a mass of {force / acceleration}'
+        return force / acceleration
     elif not acceleration:
-        return f'has an acceleration of {force / mass}'
+        return force / mass
+    else:
+        return 'All variables known'
+    
+def Work(work: float, force: float, distance: float) -> float:
+    if not work:
+        return force * distance
+    elif not force:
+        return work/distance
+    elif not distance:
+        return work/force
     else:
         return 'All variables known'

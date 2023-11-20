@@ -9,3 +9,4 @@ class material:
     weight: float
     distance: float
     time: int
+    work: float
