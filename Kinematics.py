@@ -1,8 +1,8 @@
-def Force(force: float, mass: float, accleration: float) -> float:
+def Force(force: float, mass: float, acceleration: float) -> float:
     if not force:
-        return mass * accleration
+        return f'has a force of {mass * acceleration}'
     elif not mass:
-        return force / accleration
-    elif not accleration:
-        return force / mass
+        return f'has a mass of {force / acceleration}'
+    elif not acceleration:
+        return f'has an acceleration of {force / mass}'
     

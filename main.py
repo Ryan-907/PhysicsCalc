@@ -26,4 +26,4 @@ if __name__ == '__main__':
     #Initializing the Data Class
     item = material(name=n, force=f, mass = m,acceleration=a, weight=w, distance=d, time=t)
     #Only force right now but I will do others, just you wait!
-    print(f'{item.name} has a force of {Force(item.force, item.mass, item.acceleration)}')
+    print(f'{item.name} {Force(item.force, item.mass, item.acceleration)}')
