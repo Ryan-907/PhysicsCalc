@@ -28,12 +28,17 @@ if __name__ == '__main__':
     #Initializing the Data Class
     item = material(name=n, force=f, mass = m,acceleration=a, weight=w, distance=d, time=t, work=w)
 
-    #Checks if force is known. If not, it assigns force to the result. There has to be a better way so I can get
-    #a good print out. That will prob be besy fixed when I make a GUI.
-    if item.force:
-        print(f'{item.name} {Force(item.force, item.mass, item.acceleration)}')
-    else:
-        print(f'{item.name} {Force(item.force, item.mass, item.acceleration)}')
+    #Checks if force is known. If not, it assigns force to the result. For now this elif will work for display
+    #I will make it better when I learn how to do a GUI.
+    if not item.force:
+        print(f'{item.name} has a force {Force(item.force, item.mass, item.acceleration)} Newton(s)')
         item.force = Force(item.force, item.mass, item.acceleration)
+    elif not item.mass:
+        print(f'{item.name} has a mass of {Force(item.force, item.mass, item.acceleration)} kilogram(s)')
+        item.mass = Force(item.force, item.mass, item.acceleration)
+    elif not item.acceleration:
+        print(f'{item.name} has {Force(item.force, item.mass, item.acceleration)} meter(s) per second of acceleration')
+        item.acceleration = Force(item.force, item.mass, item.acceleration)
+        
 
     print(f'{item.name} {Work(item.work, item.force, item.distance)}')
