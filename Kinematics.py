@@ -1,8 +1,8 @@
 def Force(force: float, mass: float, accleration: float) -> float:
-    if force is None:
+    if not force:
         return mass * accleration
-    elif mass is None:
+    elif not mass:
         return force / accleration
-    elif accleration is None:
+    elif not accleration:
         return force / mass
     
