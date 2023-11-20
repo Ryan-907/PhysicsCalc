@@ -10,4 +10,3 @@ if __name__ == '__main__':
         acceleration = pyin.inputFloat("Pleas enter acceleration (if unknown, enter 0)")
         force = pyin.inputFloat("Pleas enter force (if unknown, enter 0)")
         print(Force(force, mass, acceleration)) 
-    elif
