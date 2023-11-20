@@ -1,4 +1,4 @@
-import pyinputplus as pyin
+
 from Kinematics import *
 from material import * 
 
