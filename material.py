@@ -2,6 +2,7 @@ from dataclasses import dataclass
 
 @dataclass
 class material:
+    name: str
     force: float
     mass: float
     acceleration: float
