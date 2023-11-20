@@ -28,7 +28,8 @@ if __name__ == '__main__':
     #Initializing the Data Class
     item = material(name=n, force=f, mass = m,acceleration=a, weight=w, distance=d, time=t, work=w)
 
-    #Only force right now but I will do others, just you wait!
+    #Checks if force is known. If not, it assigns force to the result. There has to be a better way so I can get
+    #a good print out. That will prob be besy fixed when I make a GUI.
     if item.force:
         print(f'{item.name} {Force(item.force, item.mass, item.acceleration)}')
     else:
